@@ -27,7 +27,7 @@
 }
 
 .logo {
-    font-size: 44px;
+    font-size: 28px;
     color: #ffffff;
     margin: 0 80px;
     cursor: pointer;
@@ -41,7 +41,7 @@
     margin: 5px;
 }
 
-.logo span {
+.logo h2 {
     display: block;
 }
 
@@ -49,15 +49,12 @@
 .main {
     background-color: #f5edef;
     min-height: 800px;
-    width: 100%;
-}
-
-.main-container {
+    /* width: 100%; */
     height: 85%;
-    width: 90%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    padding: 10px 20px;
+    padding: 40px 10%;
     flex-flow: row nowrap;
     justify-content: center;
 }
@@ -91,6 +88,7 @@
 .info-title {
     font-size: 25px;
     margin: 5px;
+    display: block;
 }
 
 .info-data {
@@ -103,7 +101,7 @@
     text-align: center;
     background-color: #ffffff;
     padding: 10px 10px;
-    font-size: 50px;
+    font-size: 35px;
     border-radius: 30px;
     width: 100%;
     margin: 0 auto;
@@ -119,7 +117,7 @@
     display: block;
 }
 
-.main-pokemon-name span {
+.main-pokemon-name h1 {
     display: block;
 }
 
@@ -176,22 +174,30 @@
     font-size: 30px;
 }
 
+@media all and (max-width: 1066px) {
+    .main-pokemon-avatar img {
+        max-width: 480px;
+    }
+}
+
 @media all and (max-width: 1024px) {
     .main {
         min-height: 700px;
     }
 
     .main-pokemon-name {
-        font-size: 40px;
+        font-size: 26px;
 
     }
 
     .main-pokemon-avatar img {
         width: 40vw;
     }
+
     .main-pokemon-name img {
         width: 55px;
     }
+
     .info-title {
         font-size: 20px;
     }
@@ -234,11 +240,12 @@
         flex: 100%;
         text-align: center;
     }
+
     .main-pokemon-name img {
         width: 45px;
     }
 
-    .main-container {
+    .main {
         flex-flow: column;
     }
 
@@ -253,9 +260,9 @@
     }
 
     .main-pokemon-info {
+        margin: 0 auto;
         width: 100%;
-        padding: 50px 10px;
-        z-index: 1;
+        padding: 50px 100px;
     }
 
     .info-element {
@@ -283,21 +290,31 @@
     }
 
     .main-pokemon-name {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     .logo {
-        font-size: 28px;
-        color: #ffffff;
+        font-size: 18px;
         margin: 0 80px;
-        cursor: pointer;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+    }
+    .logo img {
+        width: 40px;
     }
 
     .footer-text {
         font-size: 25px;
         padding: 10px;
     }
+}
+@media all and (max-width: 475px){
+    .main-pokemon-info {
+        padding: 50px 14vw;
+    }
+    .main-pokemon-name {
+        font-size: 15px;
+    }
+
 }
