@@ -174,9 +174,9 @@
     font-size: 30px;
 }
 
-@media all and (max-width: 1066px) {
+@media all and (max-width: 1155px) {
     .main-pokemon-avatar img {
-        max-width: 480px;
+        max-width: 450px;
     }
 }
 
