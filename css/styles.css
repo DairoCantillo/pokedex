@@ -135,6 +135,8 @@
     min-height: 180px;
     width: 100%;
     background-color: #cf190f;
+    position: absolute;
+    bottom: 0px;
 }
 
 .footer-content {
